@@ -1,5 +1,6 @@
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { useState } from "react";
+import UseMemoL from "./UseMemoL";
 
 
 const App = () => {
@@ -11,22 +12,21 @@ const App = () => {
     )
   }
   return (
-    <>
-      <div className="w-full max-w-[1340px] flex justify-center items-center p-5 flex-col gap-2">
-
-        {
+      <div className="w-full min-h-screen h-fit flex justify-center items-center p-5 flex-col gap-2  select-none">
+        <UseMemoL/>
+        {/* {
           [1,2,3].map((item,index)=>(
             <div key={index} className=" w-full h-fit border rounded-2xl overflow-hidden">
               <div className="w-full bg-zinc-500 text-white h-20 flex  items-center justify-between px-5"><p>Section {item}</p> <button onClick={()=>toggle(index)}>{active[index]? <ChevronUp/>:<ChevronDown/>}</button></div>
           <div className={`${active[index] ? 'block' :'hidden'} p-5`}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quae eveniet molestias ut veritatis? Error cum nihil quam est similique.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi corporis illum delectus beatae harum placeat quos neque alias. Neque qui assumenda accusantium odio expedita repudiandae at eius voluptates, quod quidem. Debitis ipsa rem reiciendis a repellendus illo sed amet sit deserunt voluptas nulla labore alias culpa, fugit cupiditate qui quos.
           </div>
             </div>
           ))
-        }
+        } */}
 
       </div>
-    </>
+    
   );
 };
 
