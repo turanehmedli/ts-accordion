@@ -37,42 +37,42 @@ const UseMemoL = () => {
     return movies.filter((movie) => movie.category === category);
   }, [category]);
   return (
-    <div className="w-full h-full p-3 border flex justify-center items-center flex-col">
-      <h2>Category :{category}</h2>
+    <div className="w-full h-full p-3  flex justify-center items-center flex-col">
+      <h2 className="text-2xl font-bold">Category :{category}</h2>
 
-      <div className="flex w-full p-3 border my-3">
+      <div className="flex w-full   my-3 mt-10">
         <button
-          className="border px-3 py-2 border ml-2 rounded-xl"
+          className="border px-3 py-2 rounded-xl hover:shadow-lg cursor-pointer"
           onClick={() => setCategory("All")}
         >
           All
         </button>
         <button
-          className="border px-3 py-2 border ml-2 rounded-xl"
+          className="border px-3 py-2  ml-2 rounded-xl hover:shadow-lg cursor-pointer"
           onClick={() => setCategory("Action")}
         >
           Action
         </button>
         <button
-          className="border px-3 py-2 border ml-2 rounded-xl"
+          className="border px-3 py-2  ml-2 rounded-xl hover:shadow-lg cursor-pointer"
           onClick={() => setCategory("Comedy")}
         >
           Comedy
         </button>
         <button
-          className="border px-3 py-2 border ml-2 rounded-xl"
+          className="border px-3 py-2  ml-2 rounded-xl hover:shadow-lg cursor-pointer"
           onClick={() => setCategory("Sci-Fi")}
         >
           Sci-Fi
         </button>
       </div>
 
-      <div className="w-full h-full grid grid-cols-3 gap-4">
+      <div className="w-full h-full grid grid-cols-3 gap-4 ">
         {sort.map((movie) => (
-          <p className="border w-full my-2 p-3" key={movie.id}>
-            Movie:{movie.title} 
-            <p className="my-2">Category:{movie.category}</p>
-          </p>
+          <div className="border w-full my-2 p-3 rounded-xl hover:shadow-lg cursor-pointer" key={movie.id}>
+            Movie: {movie.title} 
+            <p className="my-2">Category: {movie.category}</p>
+          </div>
         ))}
       </div>
     </div>

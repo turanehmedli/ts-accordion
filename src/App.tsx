@@ -1,6 +1,9 @@
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { useState } from "react";
-import UseMemoL from "./UseMemoL";
+import UseMemoL from "./components/home/UseMemoL";
+import Users from "./components/Users";
+import MyForm from "./components/MyForm";
+import Register from "./pages/Register";
 
 
 const App = () => {
@@ -12,8 +15,12 @@ const App = () => {
     )
   }
   return (
-      <div className="w-full min-h-screen h-fit flex justify-center items-center p-5 flex-col gap-2  select-none">
-        <UseMemoL/>
+      <div className="w-full min-h-screen h-fit flex justify-center items-center p-5 flex-col gap-2  select-none bg-black text-white">
+        {/* <UseMemoL/> */}
+        {/* <Users/> */}
+        {/* <MyForm/> */}
+        <Register/>
+      {/*zod, react hook form, formik, react form (tanstack form)*/}
         {/* {
           [1,2,3].map((item,index)=>(
             <div key={index} className=" w-full h-fit border rounded-2xl overflow-hidden">
