@@ -46,7 +46,7 @@ const Register = () => {
 
   return (
     <form
-      className="border rounded-lg w-130 p-7 px-10 flex flex-col gap-5 shadow shadow-gray-200"
+      className="border rounded-lg w-130 p-7 px-10 flex flex-col gap-5 shadow-xl shadow-gray-200"
       onSubmit={(e) => {
         e.preventDefault();
         form.handleSubmit();

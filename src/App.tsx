@@ -1,8 +1,8 @@
-import { ChevronDown, ChevronUp } from "lucide-react";
+// import { ChevronDown, ChevronUp } from "lucide-react";
 import { useState } from "react";
-import UseMemoL from "./components/home/UseMemoL";
-import Users from "./components/Users";
-import MyForm from "./components/MyForm";
+// import UseMemoL from "./components/home/UseMemoL";
+// import Users from "./components/Users";
+// import MyForm from "./components/MyForm";
 import Register from "./pages/Register";
 
 
@@ -21,7 +21,7 @@ const App = () => {
         {/* <MyForm/> */}
         <Register/>
       {/*zod, react hook form, formik, react form (tanstack form)*/}
-        {/* {
+        {/* { 
           [1,2,3].map((item,index)=>(
             <div key={index} className=" w-full h-fit border rounded-2xl overflow-hidden">
               <div className="w-full bg-zinc-500 text-white h-20 flex  items-center justify-between px-5"><p>Section {item}</p> <button onClick={()=>toggle(index)}>{active[index]? <ChevronUp/>:<ChevronDown/>}</button></div>

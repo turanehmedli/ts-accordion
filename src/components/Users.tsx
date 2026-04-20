@@ -47,7 +47,7 @@ const Users = () => {
         firstName: "Updated",
         lastName: "User",
         email: "updated@example.com",
-      },
+      }, 
     });
   };
 
